@@ -1,0 +1,52 @@
+/* HomeSection.css */
+
+/* Styles for the home section */
+#home {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Prevent overflow to avoid scrollbars */
+}
+
+#home > div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-size 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+/* Text container styling */
+#home .text-container {
+  text-align: center; /* Center align text */
+  color: #fff; /* White color for text to stand out on the background */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add text shadow for readability */
+}
+
+/* Heading styles */
+#home h1 {
+  font-size: 3rem; /* Large font size for the main heading */
+  margin-bottom: 20px; /* Space below heading */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Subheading styles */
+#home h4 {
+  font-size: 1.5rem; /* Medium font size for the subheading */
+  font-weight: 400; /* Regular weight for subheading */
+  text-decoration: underline; /* Underline subheading */
+  margin-top: 10px; /* Space above subheading */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2.5rem; /* Smaller font size for smaller screens */
+  }
+
+  #home h4 {
+    font-size: 1.2rem; /* Adjust subheading font size for smaller screens */
+  }
+}

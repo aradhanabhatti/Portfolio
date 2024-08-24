@@ -1,0 +1,174 @@
+/* About section styling */
+#about {
+    /* padding: 20px 20px; */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 1200px;
+  }
+  
+  /* Container styling */
+  #about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Section header styling */
+  #about h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    position: relative;
+  }
+  
+  /* Underline effect for section header */
+  #about h3::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+  }
+  
+  /* Profile photo card styling */
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+  }
+  
+  /* Profile photo styling */
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Profile photo hover effect */
+  .card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Personal information styling */
+  .personal-info {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .personal-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  /* Bold text styling */
+  .personal-info p b {
+    color: #007bff;
+  }
+  
+  /* Link styling */
+  #about a {
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  #about a:hover {
+    color: #0056b3;
+  }
+  
+  /* Download resume button styling */
+.download-resume {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff; /* White text color for better contrast */
+    background-color: #398660; /* Primary color background */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Button hover effect */
+  .download-resume:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    color: #e0e0e0; /* Slightly lighter text color on hover for better visibility */
+  }
+  
+  .bg-primary {
+    background-color: #007bff !important; /* Consistent primary color */
+  }
+  
+  .text-light {
+    color: #fff !important; /* Light text color */
+  }
+
+  /* About text styling */
+  .about-text {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .more-text, .show-less {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .show-less {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    #about h3 {
+      font-size: 2rem;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #about h3 {
+      font-size: 1.8rem;
+    }
+  
+    .col-lg-4 {
+      width: 100%;
+    }
+  
+    #about p {
+      font-size: 1rem;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .about-text {
+      font-size: 1rem;
+    }
+  }
+  

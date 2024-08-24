@@ -1,0 +1,85 @@
+/* Navigation bar container styling */
+.nav-item {
+    background-color: #aa1c1c;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 200px; /* Adjust to your preference */
+  }
+  
+  /* Flexbox container for alignment */
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* List styling */
+  .list-unstyled {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  /* Navigation items styling */
+  .list-group-item {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  /* Hover effect for navigation items */
+  .list-group-item:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+  
+  /* Emoji styling */
+  .list-group-item span {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  /* Text styling for navigation items */
+  .list-group-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  .list-group-item a:hover {
+    color: #007bff; /* Change to your preferred color */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .nav-item {
+      max-width: 150px; /* Adjust for smaller screens */
+    }
+  
+    .list-group-item {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-item {
+      max-width: 120px; /* Further adjust for very small screens */
+    }
+  
+    .list-group-item {
+      font-size: 0.8rem;
+    }
+  }
+  

@@ -1,0 +1,122 @@
+/* ResumeSection styles */
+#resume {
+    padding: 50px 30px;
+    background-color: #f7f9fc; /* Slightly lighter background for better contrast */
+    border-radius: 12px;
+    margin: 20px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for a stronger effect */
+    max-width: 1200px; /* Limit the width for better alignment on larger screens */
+  }
+  
+  #resume h2 {
+    font-size: 3rem; /* Larger font size for the heading */
+    color: #222; /* Darker color for better contrast */
+    text-transform: uppercase; /* Uppercase for strong emphasis */
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700; /* Bolder font weight */
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    position: relative;
+  }
+  
+  /* Underline effect for heading */
+  #resume h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #007bff; /* Primary color underline */
+    margin: 10px auto 0;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px; /* Increased spacing for a cleaner layout */
+  }
+  
+  .col-lg-3 {
+    border: 2px solid #ddd; /* Slightly thicker border for emphasis */
+    background-color: #ffffff; /* White background for card contrast */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for col-lg-3 */
+  .col-lg-3:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    border-color: #007bff; /* Change border color on hover */
+  }
+  
+  .col-lg-3 span {
+    display: inline-block;
+    font-weight: 700; /* Bolder font weight for span */
+    font-size: 1.2rem; /* Larger font size for emphasis */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #007bff; /* Primary color */
+    color: #fff; /* White text color */
+    padding: 12px 25px; /* Increased padding for better balance */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds slight shadow to span */
+    margin-bottom: 25px; /* Adds more space below the span */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+  }
+  
+  /* Hover effect for span */
+  .col-lg-3 span:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .pt-3 {
+    padding-top: 1rem;
+  }
+  
+  .mx-5 {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
+  
+  .m-1 {
+    margin: 0.25rem !important;
+  }
+  
+  .mt-4 {
+    margin-top: 1.5rem !important;
+  }
+  
+  .fw-medium {
+    font-weight: 600; /* Slightly increased font weight */
+  }
+  
+  .bg-primary {
+    background-color: #007bff !important; /* Consistent primary color */
+  }
+  
+  .text-light {
+    color: #fff !important; /* Light text color */
+  }
+  
+  /* Additional utility class adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .mx-5 {
+      margin-left: 1.5rem !important;
+      margin-right: 1.5rem !important;
+    }
+  
+    #resume h2 {
+      font-size: 2.5rem; /* Adjusted font size for smaller screens */
+    }
+  
+    .col-lg-3 {
+      margin-bottom: 20px;
+    }
+  }
+  

@@ -1,0 +1,162 @@
+/* Container styling */
+.container {
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Light grey background */
+    border-radius: 8px;
+    margin: 30px auto;
+    max-width: 1200px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Wrapper styling for centering content */
+  .wrapper {
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 2rem; /* Reduced font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    position: relative;
+  }
+  
+  /* Underline effect for title */
+  .title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #007bff; /* Primary color underline */
+    margin: 10px auto 0;
+  }
+  
+  /* Skills container styling */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px; /* Increased spacing for better separation */
+    margin-top: 30px;
+  }
+  
+  /* Individual skill card styling */
+  .skill {
+    background-color: #fff; /* White background for contrast */
+    border-radius: 12px;
+    padding: 20px;
+    width: calc(33% - 30px); /* Responsive three columns */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Deep shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Hover effect for skill cards */
+  .skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  }
+  
+  /* Add gradient overlay effect on hover */
+  .skill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.5));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+  
+  .skill:hover::before {
+    opacity: 1;
+  }
+  
+  /* Skill title styling */
+  .skill-title {
+    font-size: 1.3rem; /* Reduced font size */
+    color: #007bff; /* Primary color for emphasis */
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Skill list styling */
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  /* Individual skill item styling */
+  .skill-item {
+    background-color: #f7f9fc; /* Light background for item */
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.9rem; /* Reduced font size */
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    cursor: pointer; /* Indicates clickable items */
+  }
+  
+  /* Hover effect for skill item */
+  .skill-item:hover {
+    background-color: #e6f2ff; /* Light blue background on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  
+  /* Skill image styling */
+  .skill-image {
+    width: 30px; /* Slightly smaller image size */
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%; /* Circular images */
+    object-fit: cover;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Image shadow */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Skill image hover effect */
+  .skill-item:hover .skill-image {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .skills-container {
+      gap: 20px; /* Reduced gap for smaller screens */
+    }
+  
+    .skill {
+      width: calc(50% - 20px); /* Two columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skill {
+      width: 100%; /* Full width on extra small screens */
+    }
+  
+    .title {
+      font-size: 1.8rem; /* Smaller font size for titles */
+    }
+  }
+  
